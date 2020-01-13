@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "copier",
+  "version": "1.0",
+  "permissions": [
+	  "storage",
+	  "downloads"
+	],
+		
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [ "jquery.js","content.js" ]
+    }
+  ],
+
+      "browser_action": {
+        "default_title": "copier",
+        "default_icon": "icon128.png",
+        "default_popup": "popup.html"
+    }
+	
+}
